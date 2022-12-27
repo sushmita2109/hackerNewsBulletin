@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&family=Lato:ital,wght@0,400;1,300&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+.footer{
+    background-color: rgb(249 115 22);
+}
+.footerHeader{
+    font-family: 'IBM Plex Mono', monospace;
+    align-items: center; 
+    margin: auto;
+    color: white;
+}

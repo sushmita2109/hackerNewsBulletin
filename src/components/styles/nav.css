@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&family=Lato:ital,wght@0,400;1,300&family=Source+Sans+Pro:ital,wght@0,300;1,200&display=swap');
+
+nav {
+    background-color: rgb(249 115 22);
+}
+
+.navBrand {
+    font-weight: bold;
+    text-align: left;
+    margin: auto;
+    color: white;
+}
+
+.searchArea {
+    align-items: center;
+}
+
+.searchTxt {
+    height: 1.5rem;
+    font-size: larger;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.searchBtn {
+    height: 1.6rem;
+    font-size: larger;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
