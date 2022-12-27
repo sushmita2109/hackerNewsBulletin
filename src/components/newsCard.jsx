@@ -3,18 +3,18 @@ import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 
 
-const Newscard = (props) => {
+const Newscard = ({url,idx,searchText}) => {
     const [cardData, setCardData] = useState({});
-
+    console.log("newcard", searchText);
     useEffect(() => {
-        if (props?.url.length > 0) {
-            fetch(props.url).then(response => response.json()).then(resp => setCardData(resp))
+        if (url.length > 0) {
+            fetch(url).then(response => response.json()).then(resp => setCardData(resp))
 
         }
-    }, [props.url])
+    }, [url])
     return (
         <div >
-
+            
             <Card style={{
                 width: '18rem',
                 border: '0.1rem solid black',

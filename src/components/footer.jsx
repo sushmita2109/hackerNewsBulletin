@@ -1,4 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faYoutube,
+    faFacebook,
+    faTwitter,
+    faInstagram
+  } from "@fortawesome/free-brands-svg-icons";
 import './styles/footer.css';
 
 const Footer=()=>{
@@ -7,8 +14,21 @@ return(
         <div className="footerHeader">
             Follow us on
         </div>
-        {/* <i class="fa-brands fa-facebook"></i> */}
-        <i className="fa fa-facebook-square" aria-hidden="true"></i>
+        <a href="https://www.youtube.com/c/thehackernews"
+        className="youtubesocial">
+        <FontAwesomeIcon color="white" icon={faYoutube} size="2x" />
+      </a>
+      <a href="https://www.facebook.com/thehackernews/"
+        className="facebooksocial">
+        <FontAwesomeIcon color="white" icon={faFacebook} size="2x" />
+      </a>
+      <a href="https://twitter.com/TheHackersNews?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" className="twittersocial">
+        <FontAwesomeIcon color="white" icon={faTwitter} size="2x" />
+      </a>
+      <a href="https://www.instagram.com/thehackernews/?hl=en"
+        className="instagramsocial">
+        <FontAwesomeIcon color="white" icon={faInstagram} size="2x" />
+      </a>
     </div>
 )
 }

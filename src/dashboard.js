@@ -5,10 +5,10 @@ import Newscard from './components/newsCard';
 
 const baseUrl = 'https://hacker-news.firebaseio.com/v0/item/';
 
-export const Dashboard = () => {
+export const Dashboard = ({searchText}) => {
     const [posts, setPosts] = useState([]); //[]
     const sanitisedPosts = posts?.slice(0, 21).map(post => baseUrl + post + ".json");
-    console.log(sanitisedPosts);
+    console.log(sanitisedPosts, searchText);
     return (
         <>
             <Getid callback={setPosts} />
@@ -21,7 +21,7 @@ export const Dashboard = () => {
             }}>
                 {
                     sanitisedPosts?.map((post, idx) => {
-                        return <Newscard url={post} key={idx} />
+                        return <Newscard url={post} key={idx} searchText={searchText}/>
                     })
                 }
             </div></>
