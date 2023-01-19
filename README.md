@@ -1,3 +1,17 @@
+# HackerNews Bulletin
+
+##### this application showcase the top news present in hackernews as well as job notifications are also avaliable.
+
+## Top news Page
+
+
+![screencapture-localhost-3000-2022-12-28-10_22_53](https://user-images.githubusercontent.com/46422928/213375636-ac74e4b1-1822-4e5d-9a58-363392034f38.png)
+
+## Jobs Notification
+
+![screencapture-localhost-3000-jobs-2022-12-28-10_23_26](https://user-images.githubusercontent.com/46422928/213375766-70c9c140-3619-4d9f-96aa-7702a1e7994d.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
